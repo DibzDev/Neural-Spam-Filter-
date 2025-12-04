@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neural Spam Filter | AI-Powered Threat Detection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scanline"></div>
+    <div class="grid-overlay"></div>
+    
+    <div class="container">
+      <header>
+        <div class="logo">
+          <i class="fas fa-brain logo-icon"></i>
+          <h1 class="glitch" data-text="Neural Spam Filter">Neural Spam Filter</h1>
+        </div>
+        <p class="tagline">AI-Powered Threat Detection System | Real-time Pattern Analysis</p>
+      </header>
+      
+      <div class="main-content">
+        <div class="input-panel">
+          <h2 class="panel-title"><i class="fas fa-terminal"></i> Message Analysis</h2>
+          
+          <div class="message-input-container">
+            <label class="message-label" for="message-input">Input Text for Threat Assessment:</label>
+            <textarea 
+              id="message-input" 
+              placeholder="Enter suspicious message for neural analysis..."
+              rows="8"
+            ></textarea>
+            
+            <div class="input-footer">
+              <div class="char-count">
+                <i class="fas fa-text-height"></i>
+                <span id="char-count">0</span> characters
+              </div>
+              <div class="input-hint">
+                <i class="fas fa-lightbulb"></i>
+                Real-time analysis enabled
+              </div>
+            </div>
+          </div>
+          
+          <div class="controls">
+            <button class="btn btn-primary" id="check-message-btn">
+              <i class="fas fa-search"></i> Initiate Scan
+            </button>
+            <button class="btn btn-secondary" id="clear-btn">
+              <i class="fas fa-eraser"></i> Clear Field
+            </button>
+          </div>
+        </div>
+        
+        <div class="analysis-panel">
+          <h2 class="panel-title"><i class="fas fa-chart-network"></i> Threat Analysis</h2>
+          
+          <div class="detection-visualization">
+            <div class="neural-network" id="neural-network"></div>
+          </div>
+          
+          <div class="analysis-result">
+            <div class="result-header">
+              <div class="threat-level" id="threat-level">Neutral</div>
+              <div class="confidence-container">
+                <span class="confidence-label">Confidence:</span>
+                <div class="confidence-bar-container">
+                  <div class="confidence-bar">
+                    <div class="confidence-fill" id="confidence-fill"></div>
+                  </div>
+                  <span class="confidence-value" id="confidence-value">50%</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="detected-patterns">
+              <h3 class="patterns-title"><i class="fas fa-shield-alt"></i> Detected Threat Patterns</h3>
+              <ul class="pattern-list" id="pattern-list">
+                <li class="pattern-item">
+                  <span class="pattern-name">No threats detected</span>
+                  <span class="pattern-severity severity-low">Safe</span>
+                </li>
+              </ul>
+              <div class="pattern-count" id="pattern-count">0 threat patterns identified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="recent-scans">
+        <h2 class="scans-title"><i class="fas fa-history"></i> Recent Scan History</h2>
+        <div class="scans-container" id="scans-container">
+          <div class="scan-item">
+            <div class="scan-message">System initialized. Ready for threat analysis.</div>
+            <div class="scan-result">
+              <span class="scan-status" style="color: var(--cyber-green)">Secure</span>
+              <span class="scan-time">Just now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="footer-logo">NEURAL SPAM FILTER v2.0</div>
+        <div class="footer-text">
+          <i class="fas fa-code"></i> Advanced Threat Detection System
+          <span style="margin: 0 10px;">•</span>
+          <i class="fas fa-brain"></i> Neural Network Analysis
+          <span style="margin: 0 10px;">•</span>
+          <i class="fas fa-shield-alt"></i> Real-time Protection
+        </div>
+        <div class="footer-text" style="margin-top: 10px;">
+          <i class="far fa-copyright"></i> 2025 Neural Systems. All transmissions secured.
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
