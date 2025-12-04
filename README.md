@@ -73,7 +73,7 @@
 ### Local Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/neural-spam-sentinel.git
+git clone https://github.com/DibzDev/neural-spam-filter.git
 
 # Navigate to project directory
 cd neural-spam-sentinel
